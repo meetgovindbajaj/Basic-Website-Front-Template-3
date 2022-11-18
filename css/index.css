@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+.animate__animated {
+    animation-iteration-count: infinite;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+nav .menu a:hover {
+    color: #00b894;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+}
+
+section .btnone,
+.btntwo:hover {
+    background-color: white;
+    color: black;
+}
+
+section .btntwo,
+.btnone:hover {
+    background-color: #00b894;
+    color: white;
+}
+
+.btntwo:hover,
+.btnone:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.change::after {
+    content: '';
+    color: #00b894;
+    animation: changes 10s infinite linear;
+}
+
+@keyframes changes {
+
+    0%,
+    100% {
+        content: 'jodhpur';
+    }
+
+    20% {
+        content: 'agra';
+    }
+
+    40% {
+        content: 'mumbai';
+    }
+
+    60% {
+        content: 'kerala';
+    }
+
+    80% {
+        content: 'kashmir';
+    }
+}
